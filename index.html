@@ -3,31 +3,46 @@
 <head>
   <title>Karuna</title>
   <style type="text/css">
+    html {
+      height: 100%;
+    }
     body {
       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       font-weight: 300;
+      height: 85%;
     }
     .logo {
-      font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+      width: 50%;
       font-size: 4em;
       margin-top: 0.5em;
       margin-bottom: 0.25em;
     }
     .hero {
-      text-align: center;
-      font-size: 4em;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .email {
+      width: 98%;
+      position: fixed;
+      bottom: 0;
+      margin-bottom: 1em;
+      text-align: right;
     }
     a {
+      font-size: 2rem;
       color: black;
       text-decoration: underline;
       text-decoration-style: dotted;
-      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="hero">
-    <p class="logo">karuna</p>
+    <img class="logo" src="assets/logo.png" />
+  </div>
+  <div class="email">
     <a href="mailto:founders@karuna.xyz" target="_blank">founders@karuna.xyz</a>
   </div>
 </body>
